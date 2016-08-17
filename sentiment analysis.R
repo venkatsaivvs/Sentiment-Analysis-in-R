@@ -34,7 +34,7 @@ freq20
 #total terms is 2156,words that appear atleast 20 times 233 => there are words that appear very often. remove them to make model simple.
 #This is called sparsity=> various terms that appear in very less documents.
 sparse<-removeSparseTerms(freq,0.995)
-#keep only terms that appear in atleast 0.5% of the terms.
+#keep only terms that appear in atleast 0.5% of the given terms.
 #0.5% of 2156 = 10 docs.  trade off choose balance.
 str(sparse)
 #terms = 224.
